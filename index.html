@@ -40,7 +40,7 @@
             </ul>
           </div>
           <div id="nav-2" class="flex items-center justify-between gap-x-3">
-            <div class="w-10 h-10">
+            <div id="cart" class="w-10 h-10">
               <div class="relative w-full h-full">
                 <i class="fa-solid fa-bag-shopping text-3xl"></i>
                 <div
@@ -90,47 +90,93 @@
       </div>
     </header>
     <section class="w-[60%] min-h-screen mx-auto bg-orange-500 pt-10">
-      <div class="grid grid-cols-1 md:grid-cols-3 place-self-center gap-2">
-        <div
-          class="bg-gray-200 h-[485px] w-full rounded-md flex flex-col p-[14px]"
-        >
-          <div class="basis-[50%] w-full h-full rounded-sm">
-            <img
-              class="w-full h-full object-cover"
-              src="http://t3.gstatic.com/licensed-image?q=tbn:ANd9GcRvC27D9KlxeEham1w-Wpd_pu3hd4A-OywxRbdnx9JFLpcTD7dfL0bD_WI6Ro8QkzrPLkBMzA9osrMpi4JSP5Y"
-              alt=""
-            />
+      <div
+        id="card"
+        class="grid grid-cols-1 md:grid-cols-3 place-self-center gap-2"
+      ></div>
+    </section>
+    <section>
+      <div class="card">
+        <!-- <div class=" h-full">
+          
+        </div> -->
+        <div class="bg-blue-400 min-h-full flex flex-col items-center">
+          <div
+            class="basis-[60px] bg-white w-full flex items-center justify-between"
+          >
+            <div>
+              <i
+                class="fa-solid fa-bag-shopping text-xl text-orange-500 ml-3"
+              ></i>
+              <span class="text-orange-500 font-medium ml-2">2 items</span>
+            </div>
+            <div class="mr-3">
+              <button
+                class="px-1 py-[2px] cursor-pointer rounded-md bg-white font-medium text-orange-500 border-2 border-orange-500"
+              >
+                <p class="text-sm">Close</p>
+              </button>
+            </div>
+          </div>
+          <div class="flex-1 bg-orange-500 w-full">
+            <div class="grid grid-cols-1 gap-3 p-3">
+              <div
+                class="p-3 flex w-full border-2 border-white rounded-md h-[150px]"
+              >
+                <div class="basis-[20%]">
+                  <div class="w-full h-full rounded-md">
+                    <img
+                      class="w-[70%] h-full object-cover rounded-md"
+                      src="https://i.ibb.co/GsB6wJX/chicken-masala.jpg"
+                      alt="food item image"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="flex-1 flex flex-col items-start justify-center text-white relative"
+                >
+                  <p class="text-base font-bold">Chicken Masala</p>
+                  <p class="text-xs font-medium">390$ each</p>
+                  <div class="flex items-center justify-center mt-4">
+                    <button
+                      class="py-1 px-2 bg-gray-300 rounded-sm text-black font-medium"
+                    >
+                      -
+                    </button>
+                    <div
+                      class="px-5 py-[2px] m-0 bg-white text-black text-sm font-medium"
+                    >
+                      1
+                    </div>
+                    <button
+                      class="py-1 px-2 bg-gray-300 rounded-sm text-black font-medium"
+                    >
+                      +
+                    </button>
+                  </div>
+                  <div
+                    class="absolute -top-5 -right-4 bg-white p-2 rounded-md flex items-center justify-center"
+                  >
+                    <i class="fa-solid fa-trash text-orange-500"></i>
+                  </div>
+                  <div class="absolute bottom-0 right-0">
+                    <p class="text-base font-bold">269 tk</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div
-            class="basis-[50%] pt-3 flex flex-col items-center justify-between"
+            class="basis-[60px] bg-orange-100 w-full flex items-center justify-center"
           >
-            <div class="w-full h-full">
-              <p class="text-xl font-semibold">Chicken</p>
-              <p class="text-sm font-medium text-gray-600">69$/each</p>
-              <p class="line-clamp-3 text-sm text-gray-500 my-4">
-                Chicken fajitas served with rice and beans, tortials, guacamole,
-                salsa and sour cream Chicken fajitas served with Lorem ipsum
-                dolor sit amet consectetur adipisicing elit. Natus hic dolorum
-                molestiae fuga neque. Obcaecati quos mollitia ullam rem
-                molestias nesciunt excepturi iure, delectus corrupti accusantium
-                totam corporis autem. Illo.
-              </p>
-            </div>
-            <div class="w-full h-full">
-              <button
-                class="py-1 w-full cursor-pointer rounded-md bg-orange-500 font-medium text-white mb-2"
-              >
-                <p class="text-base">Add To Order</p>
-              </button>
-              <button
-                class="py-1 w-full cursor-pointer rounded-md bg-inherit border-[3px] border-orange-500 font-medium text-white"
-              >
-                <p class="text-base text-orange-500">Customize</p>
-              </button>
-            </div>
+            <p class="text-center text-base font-normal text-orange-500">
+              Place Order
+              <span class="text-base font-bold text-orange-500">438 $</span>
+            </p>
           </div>
         </div>
       </div>
     </section>
+    <script src="./index.js"></script>
   </body>
 </html>
