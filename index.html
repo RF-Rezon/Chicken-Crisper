@@ -14,13 +14,26 @@
     <link rel="stylesheet" href="/Style/output.css" />
   </head>
   <body>
-    <nav class="bg-orange-100 h-[60px] min-w-full">
+    <nav
+      class="bg-customRed bg-opacity-5 h-full md:h-[70px] min-w-full border-t-[3px] border-t-customRed py-5 md:py-2 mb-20 md:mb-0"
+    >
       <div class="w-[50%] h-full mx-auto flex items-center justify-center">
-        <div id="nav" class="flex items-center justify-between w-full h-full">
+        <div
+          id="nav"
+          class="flex flex-col gap-y-5 md:flex-row items-center justify-between w-full h-full"
+        >
           <div id="nav-1">
-            <ul class="flex items-center gap-x-10 text-base font-medium">
+            <ul
+              class="flex flex-col md:flex-row items-center gap-x-10 text-base font-medium gap-y-4"
+            >
               <li class="cursor-pointer uppercase">
-                <a class="" href="#"></a>Icon
+                <div class="w-[60px]">
+                  <img
+                    src="https://i.ibb.co/jfpSg1v/2560px-Chili-s-Logo-svg.png"
+                    class="w-full h-full object-cover"
+                    alt="logo"
+                  />
+                </div>
               </li>
               <li class="cursor-pointer uppercase">
                 <a class="" href="#"></a>Menu
@@ -39,19 +52,23 @@
               </li>
             </ul>
           </div>
-          <div id="nav-2" class="flex items-center justify-between gap-x-3">
-            <div id="cart" class="w-10 h-10">
+          <div
+            id="nav-2"
+            class="flex items-center justify-between gap-x-10 md:gap-x-3"
+          >
+            <div id="cart" class="w-10 h-10 cursor-pointer">
               <div class="relative w-full h-full">
                 <i class="fa-solid fa-bag-shopping text-3xl"></i>
                 <div
-                  class="absolute top-0 left-0 ml-3 rounded-full bg-orange-500 w-4 h-4 flex items-center justify-center p-3 text-xs font-medium text-white"
+                  id="quantity1"
+                  class="absolute top-0 left-0 ml-3 rounded-lg bg-customRed w-4 h-4 flex items-center justify-center p-3 text-xs font-medium text-white"
                 >
-                  2
+                  0
                 </div>
               </div>
             </div>
             <button
-              class="px-14 py-2 cursor-pointer rounded-md bg-orange-500 uppercase font-medium text-white"
+              class="px-4 md:px-14 py-2 cursor-pointer rounded-md bg-customRed uppercase font-medium text-white"
             >
               <p class="text-base">Order Now</p>
             </button>
@@ -59,25 +76,34 @@
         </div>
       </div>
     </nav>
-    <header class="w-[50%] mx-auto">
+    <header class="w-[50%] mx-auto pt-3">
       <div
-        class="font-medium h-[200px] bg-pink-400 flex flex-col items-center justify-center gap-y-3"
+        class="font-medium h-[200px] flex flex-col items-center justify-center gap-y-3"
       >
-        <h1 class="text-4xl uppercase text-orange-500">
-          Chicken Crisper Combos
-        </h1>
-        <div class="flex gap-x-4">
-          <h1 class="text-xs cursor-pointer text-orange-500">Menu</h1>
+        <p
+          class="text-2xl md:text-4xl uppercase text-customRed md:flex items-center"
+        >
+          Chicken Crisper
+          <span class="text-[60px] md:text-[72px] md:mt-5 hidden md:block">&#174; </span> Combos
+        </p>
+        <div class="flex gap-x-4 items-center">
+          <p class="text-sm cursor-pointer text-customRed">Menu</p>
           <i class="fa-solid fa-chevron-right"></i>
-          <h1 class="text-xs">Chicken Crisper Combos</h1>
+          <p class="text-sm flex items-center">
+            Chicken Crisper<span class="text-xl hidden md:block">&#174;</span>Combos
+          </p>
         </div>
-        <h1 class="text-base">
-          Find everything form our big mouth burgers, our always sizzling , Full
-          on fajitas and our famous Chicken Crispers
+        <p class="text-base flex items-center mt-2">
+          Find everything form our big mouth burgers,
+          <span class="text-xl hidden md:block">&#174;</span> our always sizzling , Full on
+          fajitas and our famous Chicken Crispers
+          <span class="text-xl hidden md:block">&#174;</span>
         </h1>
       </div>
-      <div class="w-full flex items-center justify-end">
-        <select className="select select-warning w-full rounded-md">
+      <div class="w-full flex items-center justify-end mt-20 md:mt-0">
+        <select
+          className="select select-warning w-full rounded-md border-2 border-black"
+        >
           <option class="font-medium text-sm rounded-md" disabled selected>
             Menu
           </option>
@@ -89,89 +115,46 @@
         </select>
       </div>
     </header>
-    <section class="w-[60%] min-h-screen mx-auto bg-orange-500 pt-10">
+    <section class="w-[85%] md:w-[55%] min-h-screen mx-auto pt-10 mb-[68px] md:mb-0">
       <div
         id="card"
-        class="grid grid-cols-1 md:grid-cols-3 place-self-center gap-2"
+        class="grid grid-cols-1 md:grid-cols-3 place-self-center gap-[10px]"
       ></div>
     </section>
     <section>
-      <div class="card">
-        <!-- <div class=" h-full">
-          
-        </div> -->
-        <div class="bg-blue-400 min-h-full flex flex-col items-center">
+      <div class="sideCard">
+        <div class="min-h-full flex flex-col items-center">
           <div
-            class="basis-[60px] bg-white w-full flex items-center justify-between"
+            class="basis-[70px] bg-white w-full flex items-center justify-between"
           >
             <div>
               <i
-                class="fa-solid fa-bag-shopping text-xl text-orange-500 ml-3"
+                class="fa-solid fa-bag-shopping text-xl text-customRed ml-3"
               ></i>
-              <span class="text-orange-500 font-medium ml-2">2 items</span>
+              <p class="text-customRed font-medium ml-2 inline">
+                <span id="quantity2" class="mr-1">0</span>Item
+              </p>
             </div>
             <div class="mr-3">
               <button
-                class="px-1 py-[2px] cursor-pointer rounded-md bg-white font-medium text-orange-500 border-2 border-orange-500"
+                id="close"
+                class="px-1 py-[2px] cursor-pointer rounded-md bg-white font-medium text-customRed border-2 border-orange-500"
               >
                 <p class="text-sm">Close</p>
               </button>
             </div>
           </div>
-          <div class="flex-1 bg-orange-500 w-full">
-            <div class="grid grid-cols-1 gap-3 p-3">
-              <div
-                class="p-3 flex w-full border-2 border-white rounded-md h-[150px]"
-              >
-                <div class="basis-[20%]">
-                  <div class="w-full h-full rounded-md">
-                    <img
-                      class="w-[70%] h-full object-cover rounded-md"
-                      src="https://i.ibb.co/GsB6wJX/chicken-masala.jpg"
-                      alt="food item image"
-                    />
-                  </div>
-                </div>
-                <div
-                  class="flex-1 flex flex-col items-start justify-center text-white relative"
-                >
-                  <p class="text-base font-bold">Chicken Masala</p>
-                  <p class="text-xs font-medium">390$ each</p>
-                  <div class="flex items-center justify-center mt-4">
-                    <button
-                      class="py-1 px-2 bg-gray-300 rounded-sm text-black font-medium"
-                    >
-                      -
-                    </button>
-                    <div
-                      class="px-5 py-[2px] m-0 bg-white text-black text-sm font-medium"
-                    >
-                      1
-                    </div>
-                    <button
-                      class="py-1 px-2 bg-gray-300 rounded-sm text-black font-medium"
-                    >
-                      +
-                    </button>
-                  </div>
-                  <div
-                    class="absolute -top-5 -right-4 bg-white p-2 rounded-md flex items-center justify-center"
-                  >
-                    <i class="fa-solid fa-trash text-orange-500"></i>
-                  </div>
-                  <div class="absolute bottom-0 right-0">
-                    <p class="text-base font-bold">269 tk</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="flex-1 bg-customRed w-full">
+            <div id="sideCart" class="grid grid-cols-1 gap-3 p-3"></div>
           </div>
           <div
-            class="basis-[60px] bg-orange-100 w-full flex items-center justify-center"
+            class="basis-[60px] bg-customRed bg-opacity-100 md:bg-opacity-5 w-full flex items-center justify-center border-t-4 border-t-white md:border-t-0"
           >
-            <p class="text-center text-base font-normal text-orange-500">
+            <p class="text-center text-base font-medium md:text-customRed text-white">
               Place Order
-              <span class="text-base font-bold text-orange-500">438 $</span>
+              <span id="total" class="text-base font-bold md:text-customRed text-white"
+                >0</span
+              ><span class="text-base font-bold md:text-customRed text-white"> $</span>
             </p>
           </div>
         </div>
